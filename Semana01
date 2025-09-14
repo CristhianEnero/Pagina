@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana 1 - Sistemas de Información</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #004080;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .tarjeta {
+            background: #fff;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #004080;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .ejemplo {
+            font-style: italic;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #004080;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0066cc;
+        }
+        .boton-container {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón de regreso al index en la parte superior -->
+    <div class="boton-container">
+        <a href="index.html" class="btn">Volver al inicio</a>
+    </div>
+
+    <h1>Semana 1 - Sistemas de Información</h1>
+
+    <h2>¿Qué es un Sistema de Información?</h2>
+    <p>
+        Un sistema de información es un conjunto integrado de elementos (hardware, software, datos,
+        telecomunicaciones y personas) que recoge, procesa, almacena y distribuye información para
+        facilitar la toma de decisiones, mejorar la coordinación y el control, y optimizar las
+        operaciones de una organización. Estos sistemas transforman datos en conocimiento útil para
+        diferentes niveles jerárquicos de una empresa.
+    </p>
+
+    <h2>Tipos de Sistemas de Información y Ejemplos</h2>
+
+    <div class="tarjeta">
+        <h3>1. Sistemas de Procesamiento de Transacciones (TPS)</h3>
+        <p><strong>Función:</strong> Registro y procesamiento de transacciones comerciales, como ventas, pagos, inventarios.</p>
+        <p class="ejemplo">Ejemplo: En una agencia de viajes como Despegar, un TPS gestiona la compra de boletos de avión,
+        reservaciones de hoteles y pagos, asegurando que cada transacción quede registrada y disponible en tiempo real.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>2. Sistemas de Control de Procesos de Negocio (BPM)</h3>
+        <p><strong>Función:</strong> Control y mejora continua de procesos físicos o industriales.</p>
+        <p class="ejemplo">Ejemplo: En una planta de refinación de petróleo, sensores conectados a computadoras monitorean
+        continuamente las reacciones químicas y ajustan variables como temperatura y presión.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>3. Sistemas de Colaboración Empresarial o ERP</h3>
+        <p><strong>Función:</strong> Soporte a la gestión global y coordinación interdepartamental.</p>
+        <p class="ejemplo">Ejemplo: Un ERP puede coordinar inventarios, finanzas, ventas y producción en una única plataforma.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>4. Sistemas de Información Gerencial (MIS)</h3>
+        <p><strong>Función:</strong> Análisis y presentación de información para la gestión operativa.</p>
+        <p class="ejemplo">Ejemplo: Reportes mensuales sobre ventas, costos y desempeño financiero.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>5. Sistemas de Apoyo a la Toma de Decisiones (DSS)</h3>
+        <p><strong>Función:</strong> Soporte en decisiones no rutinarias y tácticas.</p>
+        <p class="ejemplo">Ejemplo: Modelos para proyectar el impacto de cambios en precios o estrategias de marketing.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>6. Sistemas de Información Ejecutiva (EIS)</h3>
+        <p><strong>Función:</strong> Monitoreo continuo del entorno interno y externo para decisiones estratégicas.</p>
+        <p class="ejemplo">Ejemplo: Dashboard con métricas de rentabilidad, cuota de mercado y satisfacción del cliente.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>7. Sistemas de Automatización de Oficinas (OAS)</h3>
+        <p><strong>Función:</strong> Soporte a tareas rutinarias y administrativas.</p>
+        <p class="ejemplo">Ejemplo: Correo electrónico, agendas electrónicas, procesamiento de textos y videoconferencias.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>8. Sistemas de Trabajo del Conocimiento (STC)</h3>
+        <p><strong>Función:</strong> Gestión y producción de conocimiento para usuarios especializados.</p>
+        <p class="ejemplo">Ejemplo: Programas para análisis estadístico, diseño asistido por computadora o sistemas expertos médicos.</p>
+    </div>
+
+    <h2>Componentes Esenciales de un Sistema de Información</h2>
+    <ul>
+        <li><strong>Hardware:</strong> Equipos físicos como servidores, computadoras, dispositivos de red, sensores y móviles.</li>
+        <li><strong>Software:</strong> Programas que ejecutan operaciones de datos, desde sistemas operativos hasta aplicaciones.</li>
+        <li><strong>Datos:</strong> Información organizada que alimenta el sistema, almacenada en bases de datos o archivos.</li>
+        <li><strong>Telecomunicaciones:</strong> Infraestructura que permite la transmisión de datos entre componentes.</li>
+        <li><strong>Personas:</strong> Usuarios que emplean el sistema, desde operadores hasta altos ejecutivos.</li>
+    </ul>
+</body>
+</html>
