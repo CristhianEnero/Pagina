@@ -4,20 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base De Datos II</title>
-
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        /* --- Estilos del menú hamburguesa --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #004080;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #004080;
+                padding: 15px 0;
+            }
+            .menu a {
+                padding: 10px 20px;
+            }
+            .menu.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
     
     <header>
-        <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu" id="menu">
             <a href="index.html" class="active">Inicio</a>
-            <a href="news.html">Semanas</a>
+            <a href="Semana01.html">Semana 01</a>
+            <a href="Semana02.html">Semana 02</a>
             <a href="contact.html">Información</a>
         </nav>
     </header>
-
 
     <div class="carousel">
 
@@ -37,22 +97,19 @@
             </div>
             
             <div class="item" style="background-image: url(image/Sistema.gif);">
-                
                 <div class="content">
                     <div class="title">Semana 02</div>
-                    <div class="name"></div>
-                    <div class="des"></div>
+                    <div class="name">COMPUTACIÓN EN LA NUBE</div>
+                    <div class="des">Modelos y Ejemplos</div>
                     <div class="btn">
                         <a href="Semana02.html">
                             <button>Semana02</button>
                         </a>
-
                     </div>
                 </div>
-
             </div>
 
-            
+        </div>
 
         <!--next prev button-->
         <div class="arrows">
@@ -60,12 +117,19 @@
             <button class="next">></button>
         </div>
 
-
         <!-- time running -->
         <div class="timeRunning"></div>
-
     </div>
 
     <script src="app.js"></script>
+    <script>
+        // Script para el menú hamburguesa
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
